@@ -1,0 +1,26 @@
+---
+title: "entrance_survey"
+author: "JY"
+date: "9/10/2020"
+output: html_document
+---
+
+```{r}
+DF <- read.csv("hudk4050-entrance-survey.csv", header = TRUE)
+
+mode(DF$program)
+
+View(DF)
+```
+#Simple math
+```{r}
+x <- 11*25
+mode(x)
+```
+#varaible manipulation
+```{r}
+mean(DF$UTC)
+
+DF$UTC.ms <- DF$UTC*DF$math.stat
+```
+
